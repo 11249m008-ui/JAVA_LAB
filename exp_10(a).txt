@@ -1,0 +1,25 @@
+class OrderPlacement extends Thread {
+    public void run() {
+        System.out.println("Order Placed");
+    }
+}
+
+class OrderDelivery extends Thread {
+    public void run() {
+        System.out.println("Order Delivered");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        OrderPlacement t1 = new OrderPlacement();
+        OrderDelivery t2 = new OrderDelivery();
+
+        t1.start();
+        try {
+            t1.join();
+        } catch (Exception e) {}
+
+        t2.start();
+    }
+}
