@@ -1,0 +1,19 @@
+class StringExample {
+    public static void main(String[] args) {
+        String name1 = "Ravi";
+        String name2 = "Ravi";
+
+        System.out.println("Name 1: " + name1);
+        System.out.println("Name 2: " + name2);
+
+        if (name1.equals(name2)) {
+            System.out.println("Both employees belong to the same department");
+        } else {
+            System.out.println("Employees belong to different departments");
+        }
+
+        System.out.println("Length: " + name1.length());
+        System.out.println("Uppercase: " + name1.toUpperCase());
+        System.out.println("Lowercase: " + name1.toLowerCase());
+    }
+}
